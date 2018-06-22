@@ -3,7 +3,9 @@ require "yaml"
 def load_library(file_path)
   # code goes here
   new_hash = {"get_meaning" => {}, "get_emoticon" => {}}
-  YAML.load_file(file_path).each dp ||
+  YAML.load_file(file_path).each do |words, emotes|
+    
+  end
 
 +  YAML.load_file(file_path).each do |translation, emoticons_array|
 +    english = emoticons_array[0]
